@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://cgfinopsdbserver.database.windows.net:1433;databaseName=EmployeeDB;user=finopsteamadmin;password=Capgemini@20;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+#    username: finopsteamadmin
+#    password: Capgemini@20
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+
+server:
+  port: 7070
